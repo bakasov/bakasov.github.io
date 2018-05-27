@@ -8,10 +8,96 @@
 		<link rel="shortcut icon" href="/css/css.ico" type="image/x-icon">
 	</head>
 	<body>
-	<a href=#up id=upp></a><a name=up></a>
+	<a name=up></a>
 		<h1 id=a>Краткий масив с основными функциями в CSS</h1>
 		<h3><i>В изучении и практеке CSS обязательно пригодиться
 		<br/><a href=http://htmlbook.ru/css target=_blank>Справочник по CSS</a></i></h3>
-	<a href=#down id=downn></a><a name=down></a>
+		<ul id=navigation>
+			<li><a href="#1">Встроенный и внешний CSS</a></li>
+			<li><a href="#2">Синтаксис CSS</a></li>
+			<li><a href="#3">Селекторы</a></li>
+			<li><a href="#4"></a></li>
+			<li id=upp><a href=#up>Наверх</a></li>
+		</ul>
+<!--1--><a name=1></a>
+		<ol id=z>
+			<li>Встроенный и внешний CSS
+				<ul>
+					<li>Встроенный
+						<p><ins>Синтаксис:</ins>
+						<div id=b>< p <span id=d>style="color:#fff; background:#555"</span> >
+							<br>Стилизированный текст параграфа
+							<br>< / p >
+						</div></p>
+					</li>
+					<li>Вложенный
+						<p><ins>Синтаксис:</ins>
+						<div id=f>
+							< html >
+							<br>< head >
+							<br><span id=d>< style type="text/css" >
+							<br>p {
+							<br>color:#fff
+							<br>background:#555
+							<br>}
+							<br>< /style ></span>
+							<br>< /head >
+							<br>< body >
+							<br>< p style="color:#fff; background:#555" >
+							<br>Стилизированный текст параграфа
+							<br>< / p >
+							<br>< /body >
+							<br>< /html >
+						</div></p>
+					</li>
+					<li>Внешний
+						<p><ins>Синтаксис HTML:</ins>
+						<div id=c>
+							< html >
+							<br>< head >
+							<br><span id=d>< link rel="stylesheet" type="text/css" href="style.css" ></span>
+							<br>< /head >
+							<br>< body >
+							<br>< p style="color:#fff; background:#555" >
+							<br>Стилизированный текст параграфа
+							<br>< / p >
+							<br>< /body >
+							<br>< /html >
+						</div></p>
+						<p><ins>Синтаксис CSS:</ins>
+						<div id=e>
+							p {
+							<br>color:#fff
+							<br>background:#555
+							<br>}
+						</div></p>
+					</li>
+				</ul>
+				<p>Результат будет один и тот же для всех трех способов
+				<p id=g>Стилизированный текст параграфа</p></p>
+				<p>P.S. Удобнее использовать внешний CSS</p>
+			</li>
+<!--2--><a name=2></a>
+			<li>Синтаксис CSS
+				<p>Каждый CSS документ состоит из трех частей: <b>селектора</b>, <b>свойства</b> и <b>значения</b>
+				<br><ins>К примеру:</ins>
+				<table id=table>
+					<tr id=color><td>Пример</td><td>Селектор</td><td>Значение</td><td>Свойство</td></tr>
+					<tr><td>p {color:#fff}</td><td>p</td><td>color</td><td>#fff</td></tr>
+					<tr><td>h1 {width:100px}</td><td>h1</td><td>width</td><td>100px</td></tr>
+				</table>
+				</p>
+			</li>
+<!--3--><a name=3></a>
+			<li>Селекторы
+				<p><ins>Типы селекторов:</ins>
+				<table id=table>
+					<tr id=color><td id=color></td><td>Синтаксис в HTML</td><td>Синтаксис в CSS</td><td>Особенность</td></tr>
+					<tr><td id=color>Селектор по типу</td><td>Пишется какой-либо тег<br><ins>К примеру:</ins>< p >< /p ></td><td>В качестве селектора пишем просто <i>p</i></td><td>Применяется абсолютно ко всем тегам данного типа</td></tr>
+					<tr><td id=color>Селектор идентификаторов</td><td>В тег вписываеться атрибут <i>id</i><br>и даеться ему имя<br><ins>К примеру:</ins>< p id=name >< /p ></td><td>id обозначаем "#" и пишем имя<br><ins>В данном случае:</ins> #name</td><td>Для имени нельзя использовать цифры</td></tr>
+					<tr><td id=color>Селектор классов</td><td>В тег вписываеться атрибут <i>class</i><br>и даеться ему имя<br><ins>К примеру:</ins>< p class=name >< /p ></td><td>class обозначаем "." и пишем имя<br><ins>В данном случае:</ins> .name</td><td>Для имени также нельзя использовать цифры</td></tr>
+				</table></p>
+			</li>
+		</ol>
 	</body>
 </html>
