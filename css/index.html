@@ -9,14 +9,21 @@
 	</head>
 	<body>
 	<a name=up></a>
-		<h1 id=a>Краткий масив с основными функциями в CSS</h1>
-		<h3><i>В изучении и практеке CSS обязательно пригодиться
+		<h1 id=a>Краткий массив с основными функциями<br>в CSS</h1>
+		<h3><i>В изучении и практике CSS обязательно пригодиться
 		<br/><a href=http://htmlbook.ru/css target=_blank>Справочник по CSS</a></i></h3>
 		<ul id=navigation>
 			<li><a href="#1">Встроенный и внешний CSS</a></li>
 			<li><a href="#2">Синтаксис CSS</a></li>
 			<li><a href="#3">Селекторы</a></li>
-			<li><a href="#4"></a></li>
+			<li><a href="#4">Комментарии в CSS</a></li>
+			<li><a href="#5">Работа с текстом</a></li>
+			<li><a href="#6">Рамка, ширина, высота</a></li>
+			<li><a href="#7">Фон</a></li>
+			<li><a href="#8">Списки, таблицы, ссылки, курсор</a></li>
+			<li><a href="#9"></a></li>
+			<li><a href="#10"></a></li>
+			<li><a href="#"></a></li>
 			<li id=upp><a href=#up>Наверх</a></li>
 		</ul>
 <!--1--><a name=1></a>
@@ -26,7 +33,7 @@
 					<li>Встроенный
 						<p><ins>Синтаксис:</ins>
 						<div id=b>< p <span id=d>style="color:#fff; background:#555"</span> >
-							<br>Стилизированный текст параграфа
+							<br>Стилизованный текст параграфа
 							<br>< / p >
 						</div></p>
 					</li>
@@ -44,7 +51,7 @@
 							<br>< /head >
 							<br>< body >
 							<br>< p style="color:#fff; background:#555" >
-							<br>Стилизированный текст параграфа
+							<br>Стилизованный текст параграфа
 							<br>< / p >
 							<br>< /body >
 							<br>< /html >
@@ -59,7 +66,7 @@
 							<br>< /head >
 							<br>< body >
 							<br>< p style="color:#fff; background:#555" >
-							<br>Стилизированный текст параграфа
+							<br>Стилизованный текст параграфа
 							<br>< / p >
 							<br>< /body >
 							<br>< /html >
@@ -74,7 +81,7 @@
 					</li>
 				</ul>
 				<p>Результат будет один и тот же для всех трех способов
-				<p id=g>Стилизированный текст параграфа</p></p>
+				<p id=g>Стилизованный текст параграфа</p></p>
 				<p>P.S. Удобнее использовать внешний CSS</p>
 			</li>
 <!--2--><a name=2></a>
@@ -92,11 +99,152 @@
 			<li>Селекторы
 				<p><ins>Типы селекторов:</ins>
 				<table id=table>
-					<tr id=color><td id=color></td><td>Синтаксис в HTML</td><td>Синтаксис в CSS</td><td>Особенность</td></tr>
+					<tr id=color><td id=color>Тип селектора</td><td>Синтаксис в HTML</td><td>Синтаксис в CSS</td><td>Особенность</td></tr>
 					<tr><td id=color>Селектор по типу</td><td>Пишется какой-либо тег<br><ins>К примеру:</ins>< p >< /p ></td><td>В качестве селектора пишем просто <i>p</i></td><td>Применяется абсолютно ко всем тегам данного типа</td></tr>
-					<tr><td id=color>Селектор идентификаторов</td><td>В тег вписываеться атрибут <i>id</i><br>и даеться ему имя<br><ins>К примеру:</ins>< p id=name >< /p ></td><td>id обозначаем "#" и пишем имя<br><ins>В данном случае:</ins> #name</td><td>Для имени нельзя использовать цифры</td></tr>
-					<tr><td id=color>Селектор классов</td><td>В тег вписываеться атрибут <i>class</i><br>и даеться ему имя<br><ins>К примеру:</ins>< p class=name >< /p ></td><td>class обозначаем "." и пишем имя<br><ins>В данном случае:</ins> .name</td><td>Для имени также нельзя использовать цифры</td></tr>
+					<tr><td id=color>Селектор идентификаторов</td><td>В тег вписывается атрибут <i>id</i><br>и дается ему имя<br><ins>К примеру:</ins>< p id=name >< /p ></td><td>id обозначаем "#" и пишем имя<br><ins>В данном случае:</ins> #name</td><td>Для имени нельзя использовать цифры</td></tr>
+					<tr><td id=color>Селектор классов</td><td>В тег вписывается атрибут <i>class</i><br>и дается ему имя<br><ins>К примеру:</ins>< p class=name >< /p ></td><td>class обозначаем "." и пишем имя<br><ins>В данном случае:</ins> .name</td><td>Для имени также нельзя использовать цифры</td></tr>
 				</table></p>
+			</li>
+<!--4--><a name=4></a>
+			<li>Комментарии в CSS
+				<p><ins>Синтаксис:</ins>
+				<div id=h>
+					/*Текст комментария*/
+				</div></p>
+			</li>
+<!--5--><a name=5></a>
+			<li>Работа с текстом
+				<ul>
+					<li>Шрифт
+					<table id=table>
+						<tr id=color><td id=color>Значение</td><td>Описание</td><td>Свойство</td></tr>
+						<tr><td id=color>font-family</td><td></td><td></td></tr>
+						<tr><td id=color>font-size</td><td>Устанавливает размер шрифта</td><td>Указывается в <i>px</i>, <i>em</i> или ключевых словах</td></tr>
+						<tr><td id=color>font-style</td><td>Применяется для курсивного начертания текста</td><td><i>normal | italic | oblique | inherit</i></td></tr>
+						<tr><td id=color>font-weight</td><td>Устанавливает насыщенность шрифта.</td><td>От 100 до 900 с шагом 100</td></tr>
+						<tr><td id=color>font-variant</td><td>Позволяет конвертировать шрифт в маленькие заглавные буквы</td><td id=small-caps>normal | small-caps | inherit</td></tr>
+					</table>
+					</li>
+					<li>Цвет
+						<p><ins>Синтаксис:</ins>
+						<div id=i>color:#fff</div></p>
+					</li>
+					<li>Расположение текста по горизонтали
+						<p><ins>Синтаксис:</ins>
+						<div id=j>text-align:left | center | right | justify</div></p>
+					</li>
+					<li>Расположение текста по вертикали
+						<p><ins>Синтаксис:</ins>
+						<div id=j>vertical-align:top | middle | bottom</div>*на странице или в таблице</p>
+						<p><ins>Синтаксис:</ins>
+						<div id=k>vertical-align:baseline | sub | super | px, %</div>*в строке</p>
+					</li>
+					<li>text-decoration
+						<p>Определяет, как будет декорирован текст</p>
+						<p><ins>Наиболее часто использованные значения:</ins>
+						<br><b>none</b> - нормальный текст
+						<br><b>blink</b> - мигающий текст
+						<br><b>inherit</b> - наследует свойство от родительского элемента
+						<br><b>overline</b> - горизонтальная линия над текстом
+						<br><b>underline</b> - горизонтальная линия под текстом
+						<br><b>line-throudh</b> - горизонтальная линия сквозь текст
+						</p>
+					</li>
+					<li>отступы в тексте
+						<p><ins>Синтаксис:</ins>
+						<div id=h>text-indent:px, em, %</div></p>
+					</li>
+					<li>Тень текста
+						<p><ins>Синтаксис:</ins>
+						<div id=l>text-shadow:x, y, размытие, цвет</div></p>
+					</li>
+					<li>Интервал между символами
+						<p><ins>Синтаксис:</ins>
+						<div id=m>letter-spacing: normal | px, em</div></p>
+					</li>
+					<li>Интервал между словами
+						<p><ins>Синтаксис:</ins>
+						<div id=m>word-spacing: normal | px, em</div></p>
+					</li>
+					<li>Отображение пробелов и переносов
+						<p><ins>Синтаксис:</ins>
+						<div id=n>white-space: normal | inherit | nowrap (стандартное значение) | pre (сохраняются все пробелы и переносы)<br>| pre-line (сохраняются только переносы) | pre-wrap (сохраняются пробелы и переносы)</div></p>
+					</li>
+				</ul>
+			</li>
+<!--6--><a name=6></a>
+			<li>Рамка, ширина, высота
+				<p><ins>Рамка:</ins>
+				<div id=o>border: толщина стиль цвет
+				</div></p>
+				<p><ins>Некоторые стили:</ins>
+				<br><b>solid</b> - одинарная
+				<br><b>double</b> - двойная
+				<br><b>dotted</b> - точечная
+				<br><b>dashed</b> - пунктирная
+				</p>
+				<p><ins>Ширина:</ins>
+				<div id=p>width: px, em, mm, %
+				</div></p>
+				<p><ins>Высота:</ins>
+				<div id=p>height: px, em, mm, %
+				</div></p>
+			</li>
+<!--7--><a name=7></a>
+			<li>Фон
+				<p><ins>Цвет:</ins>
+					<div id=q>background-color: цвет</div>
+				</p>
+				<p><ins>Изображение:</ins>
+					<div id=r>background-image: url(путь к изображению)</div>
+				</p>
+				<p><ins>Повтор:</ins>
+					<div id=s>background-repeat: repeat-x | repeat-y | no-repeat | inherit</div>
+				</p>
+				<p><ins>Прокрутка:</ins>
+					<div id=t>background-attachment: fixed | scroll | inherit</div>
+				</p>
+				<p><ins>Линейный градиент:</ins>
+					<div id=u>background: linear-gradient(направление, первый цвет, второй цвет, третий цвет ...)</div>
+				</p>
+				<p><ins>Радиальный градиент:</ins>
+					<div id=v>background: radial-gradient(координаты центра окружности, первый цвет, второй цвет, третий цвет ...)</div>
+				</p>
+				<p><ins>Размер:</ins>
+					<div id=w>background-size:x px y px</div>
+				</p>
+				<p><ins>Область изображения фона:</ins>
+					<div id=x>background-clip: border-box | padding-box | content-box</div>
+				</p>
+			</li>
+<!--8--><a name=8></a>
+			<li>Списки, таблицы, ссылки, курсор
+				<p><ins>Списки:</ins>
+					<div id=aa>list-style-type: circle | square | decimal | disc | lower-alpha | ...</div>
+					<div id=aaa>list-style-image: url()</div>
+					<div id=aab>list-style-position: inside | outside</div>
+				</p>
+				<p><ins>Таблицы:</ins>
+					<div id=ab>
+						<b>border-collapse</b> - определяет будет ли у каждой ячейки своя рамка или общая
+						<br><b>border-spacing</b> - изменяет расстояние между рамкой ячейки и таблицы 
+						<br><b>caption-side</b> - определяет положение заголовка таблицы
+						<br><b>empty-cells</b> - определяет отображать или нет рамки и фон пустых ячеек
+						<br><b>table-layout</b> - определяет ширину ячеек 
+					</div>
+				</p>
+				<p><ins>Ссылки:</ins>
+					<div id=ac>
+						<b>a:link</b> - определяет стиль не посещенной ссылки
+						<br><b>a:visited</b> - определяет стиль посещенной ссылки
+						<br><b>a:active</b> - ссылка становится активной при нажатии на нее
+						<br><b>a:hover</b> - активируется, когда курсор находится в пределах элемента
+					</div>
+				</p>
+				<p><ins>Курсор:</ins>
+					<div id=ad>cursor: стиль курсора</div>
+				</p>
+				<p><ins>Стили курсора:</ins><br><img src="cursor.jpg"></p>
 			</li>
 		</ol>
 	</body>

@@ -127,3 +127,187 @@ img {
 	background:#555;
 	width:250px;
 }
+
+/*4*/
+
+#h {
+	width:150px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+/*5*/
+
+#noborder td {
+	border:none;
+}
+
+#small-caps {
+	font-variant:small-caps;
+}
+
+#i {
+	width:70px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#j {
+	width:235px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#k {
+	width:280px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#l {
+	width:220px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+	text-shadow:4px 2px 1px rgba(255,255,255,0.4);
+}
+
+#m {
+	width:200px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#n {
+	width:710px;
+	height:40px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+/*6*/
+
+#o {
+	width:190px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+	border:1px solid #055;
+}
+
+#p {
+	width:150px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+/*7*/
+
+#q {
+	width:155px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#r {
+	width:300px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#s {
+	width:375px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#t {
+	width:300px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#u {
+	width:555px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#v {
+	width:690px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#w {
+	width:175px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#x {
+	width:370px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+/*8*/
+
+#aa {
+	width:400px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+	margin:5px 0 5px 0;
+}
+
+#aaa {
+	width:140px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+	margin:5px 0 5px 0;
+}
+
+#aab {
+	width:220px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+	margin:5px 0 5px 0;
+}
+
+#ab {
+	width:530px;
+	height:90px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#ac {
+	width:470px;
+	height:73px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
+
+#ad {
+	width:150px;
+	height:20px;
+	background:rgba(0,120,100,0.6);
+	padding:5px;
+}
