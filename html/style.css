@@ -30,12 +30,16 @@ body {
 	color:#fff;
 }
 
-#sa {
+#upp {
 	margin-top:50px;
 }
 
 #z {
 	margin-top:50px;
+}
+
+#z li::first-line {
+	font-weight:700;
 }
 
 h1, h3, table {
@@ -60,10 +64,6 @@ a:hover {
 									  rgba(255,255,255,0.2)25%,
 									  rgba(255,255,255,0.2)75%,
 									  rgba(255,255,255,0)100%);
-}
-
-ol li::first-line {
-	font-weight:700;
 }
 
 img {
